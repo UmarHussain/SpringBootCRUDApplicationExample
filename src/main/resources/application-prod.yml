@@ -1,0 +1,18 @@
+spring:
+  profiles: prod
+datasource:
+  sampleapp:
+   # url: jdbc:mysql://localhost:3306/websystique
+   #jdbc:postgresql://192.168.0.5:5432/LDV_01122016
+   #jdbc:postgresql://192.168.0.248:5432/Catalyst
+    url: jdbc:postgresql://192.168.0.5:5432/websystique
+    username: wiz_tolo
+    password: wiz_tolo
+    driverClassName: org.postgresql.Driver
+    defaultSchema:
+    maxPoolSize: 20
+    hibernate:
+      hbm2ddl.method: create-drop
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.PostgreSQLDialect

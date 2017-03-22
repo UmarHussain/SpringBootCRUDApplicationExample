@@ -6,6 +6,8 @@ server:
 #  profiles.active: prod
 ---
 spring:
+  application:
+    name: spring-boot
   profiles: local, default
 datasource:
   sampleapp:

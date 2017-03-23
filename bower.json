@@ -1,15 +1,16 @@
 {
-	"name": "spring-live-updates",
+	"name": "spring-boot-crud",
 	"version": "0.0.1-SNAPSHOT",
 	"dependencies": {
 		"angular": "latest",
 		"angular-resource": "latest",
-	  	"angular-ui-router":"latest",
-	  	"localforage":"latest",
-	    "ngStorage":"latest",
+		"angular-ui-router":"latest",
+		"localforage":"latest",
+		"ngstorage":"latest",
 		"jquery": "latest",
 		"sockjs": "latest",
 		"stomp-websocket": "latest",
 		"showdown": "latest"
 	}
 }
+

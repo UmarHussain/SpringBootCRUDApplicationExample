@@ -2,8 +2,24 @@
 server:
   port: 8080
 # contextPath: /SpringBootCRUDApp
-# spring:
-#  profiles.active: prod
+spring:
+  profiles:
+    active: prod
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.hibernate: INFO
+    org.hibernate.SQLQuery: INFO
+   # file: logs/practice.log
+    pattern:
+      console: '%d{yyyy-MM-dd HH:mm:ss} %clr(%5p) %clr(%-40.40C{1}){blue} %clr(%-30.30M){magenta} %clr(%-3.5L){cyan} --- %m%n'
+        # file: '%d{yyyy-MM-dd HH:mm:ss} %5p %-40.40C{1} %-30.30M %-3.5L --- %m%n'
+
+output:
+  ansi:
+  enabled: DETECT
+
 ---
 spring:
   application:

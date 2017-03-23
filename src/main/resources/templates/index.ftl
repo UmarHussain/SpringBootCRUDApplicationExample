@@ -8,6 +8,7 @@
     </head>
     <body>
 
+    <ng-include src="'static/views/header.html'"></ng-include>
         <div ui-view></div>
         <script src="/static/js/lib/angular.min.js" ></script>
         <script src="/static/js/lib/angular-ui-router.min.js" ></script>

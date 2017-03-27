@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 var App = angular.module('myApp',['ngAnimate', 'ngRoute', 'angularUtils.directives.dirPagination', 'oitozero.ngSweetAlert',
     '720kb.datepicker'])
     .config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
@@ -24,4 +24,4 @@ var App = angular.module('myApp',['ngAnimate', 'ngRoute', 'angularUtils.directiv
 
     }]).run(function($rootScope) {
         $rootScope.myDateFormat = "dd/MM/yyyy";
-    });
+    });*/

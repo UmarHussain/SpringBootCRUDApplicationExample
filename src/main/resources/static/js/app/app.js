@@ -1,16 +1,30 @@
 var app = angular.module('crudApp',['ui.router','ngStorage']);
 
 app.constant('urls', {
-    BASE_URI: 'http://localhost:8080/',
-    USER_SERVICE_API : 'http://localhost:8080/api/user/'
+    BASE_URI: 'http://localhost:8085/',
+    USER_SERVICE_API : 'http://localhost:8085/api/user/'
 });
 
 app.config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
 
         $stateProvider
-            .state('home', {
-                url: '/users',
+           /* .state('home', {
+                url: '/',
+                templateUrl: 'index',
+                controller:'AppController',
+                controllerAs:'appController',
+                resolve: {
+                    hello: function () {
+                        console.log('Welcome to Angular JS Routing YO party');
+
+                    }
+                }
+            })*/
+           // .state('home.user', {
+            .state('user', {
+              //  url: '/user',
+                  url:'/',
                 templateUrl: 'partials/list',
                 controller:'UserController',
                 controllerAs:'userController',
@@ -26,3 +40,4 @@ app.config(['$stateProvider', '$urlRouterProvider',
         $urlRouterProvider.otherwise('/');
     }]);
 
+    

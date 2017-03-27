@@ -21,6 +21,7 @@
 
 # Gradle:
 /.idea
+/src/main/resources/static/js/libs
 .idea/gradle.xml
 .idea/libraries
 

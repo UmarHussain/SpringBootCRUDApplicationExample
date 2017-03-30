@@ -10,6 +10,11 @@
 
 <#--<ng-include src="'static/views/header.html'"></ng-include>-->
 <div ui-view></div>
+<div class="generic-container">
+    <div class="panel-heading"><span class="lead">Hello World</span></div>
+    <a ui-sref="category" ui-sref-active="active">Categories</a>
+</div>
+<#--<a ui-sref="category" ui-sref-active="active">User</a>-->
 <script src="/static/js/libs/angular/angular.js"></script>
 <script src="/static/js/libs/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="/static/js/libs/localforage/dist/localforage.js"></script>
